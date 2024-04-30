@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Cashmg</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+<!-- 	<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</head>
+<body>	
+		<header>
+		    <a href="#" class="logo"><span>cash</span>mg</a>
+		    <div class="menuToggle" onclick="toggleMenu();"></div>
+		    <ul class="navbar">
+		        <li><a href="index.html" onclick="toggleMenu();" class="active">PERFECT MONEY</a></li>
+		        <li><a href="#" onclick="toggleMenu();">PAYEER</a></li>
+		        <li><a href="#" onclick="toggleMenu();">ADVCASH</a></li>
+		        <li><a href="#" onclick="toggleMenu();">BINANCE</a></li>
+		        <li><a href="#" onclick="toggleMenu();">CONTACT</a></li>
+		        <li><a href="login.html" onclick="toggleMenu();">Se connecter</a></li>
+		    </ul>
+		</header>
+
+		<div class="content">
+				<div class="col1">
+						<p class="titre">SITE D'ECHANGE <span>MONETAIRE</span></p>
+						<ul class="Anim-text">
+							<li><span>S</span>imple et Accessible pour tous</li>
+							<li><span>F</span>iable et Trasparente</li>
+							<li><span>S</span>écurisé pour toutes Transactions</li>
+							<li><span>I</span>mmédiat et Rapide</li>
+						</ul>
+
+						<div class="solde-mobile">
+							<h2>SOLDE MOBILE</h2>
+								<p>Mvola : <span> 150 000 Ar</span></p>
+								<p>Orange money : <span> 250 000 Ar</span></p>
+						</div>					
+				</div>
+				<div class="col2">
+					<div class="form">
+						<div class="soldePM">
+							<h2>SOLDE</h2>
+							<p>PM : <span>150 $</span></p>
+						</div>
+						<div class="button-transaction">
+							<button class="btn-form btn-active"><a href="#">Dépôt</a></button>
+							<button class="btn-form"><a href="retraitPM.html">Retrait</a></button>
+						</div>
+
+							<div class="form-transaction">
+							
+									<label>Montant Envoyez</label>
+									<input type="text" name="envoie" placeholder="J'envoie en Ariary">
+									<p class="Min">Minimun de dépôt 4 000 Ar</p>	
+								
+
+								
+									<label>Montant reçus</label>
+									<input type="text" name="reçois" placeholder="Je reçois en USD">
+									<p class="Min">Minimun de dépôt 0.80$</p>		
+								
+											
+								
+									<label>Numero Téléphone</label>	
+									<input type="text" name="Numero Téléphone" placeholder="exemple : 034 05 xxx 12 ou 032 05 xxx x2">
+
+
+									<label>Mon Adresse Wallet</label>	
+									<input type="text" name="Adresse PM" placeholder="exemple : U03xxxx32">
+											
+								
+									<label class="Mobile-money">Mode de Paiement</label>
+									<input type="radio" name="Orange Money">
+									<span class="Description">Orange Money</span>
+									<input type="radio" name="Mvola">
+									<span class="Description">Mvola</span>							<input type="radio" name="Autre">
+									<span class="Description">Autre</span>
+									
+									
+								 		<button type="submit" class="btn-submit">Soumettre</button>
+							</div>
+					</div>
+				</div>					
+		</div>
+
+		<div class="footer">
+			<p> &copy; MGCash Madagascar 2022 <span> Conditions et Guide d'utilisation</span></p>
+			<p>page facebook : <a href="www.facebook.com"> MGCash</a></p>
+			<p>Adresse Email : <a href="www.facebook.com"> MGCash@gmail.com</a></p>
+		</div>
+
+		 <script type="text/javascript">
+		     window.addEventListener('scroll', function(){
+		         const header =document.querySelector('header');
+		         header.classList.toggle("sticky", window.scrollY > 0 );
+		     });
+
+		     function toggleMenu(){
+		         const menuToggle = document.querySelector('.menuToggle');
+		         const navbar = document.querySelector('.navbar');
+		         navbar.classList.toggle('active');
+		         menuToggle.classList.toggle('active');
+		     }
+		     
+		 </script>
+
+</body>
+</html>  

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    color: #303433;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sidelogin {
+    background: url(../images/svg/Access_account.svg) no-repeat;
+    background-size: 100% 102%;
+}
+
+.login-container {
+    max-width: 450px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.6em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #009999;
+}
+
+.separator {
+    width: 180px;
+    height: 4px;
+    background-color:#009999;
+    margin: 24px;
+}
+
+.welcome-message {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 28px;
+    margin-bottom: 28px;
+    color: #009999;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    font-size: 1rem;
+}
+button{
+    width: 180px;
+    height: 50px;
+}
+
+input {
+    width: 100%;
+    background: #e6e6e6;
+    color: #009999;
+    letter-spacing: 0.5px;
+    padding: 14px 64px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input ~ i {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: color   0.4s;
+}
+
+input:focus ~ i {
+    color: #009999;
+}
+
+::-webkit-input-placeholder{
+    color: #aaa;
+    font-weight: 600;
+	
+}
+
+button.submit {
+    color: #fff;
+    margin: 28px auto;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #009999, #15a0e1);
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+button.submit:hover {
+    background-image: linear-gradient(to right, #3096be, #00b36b);
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    height: 46px;
+    width: 46px;
+    border: 1.2px solid hsla(0, 2%, 54%, 0.973);
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icon i{
+    color:  hsla(0, 2%, 54%, 0.973);
+}
+
+.social-icon i:hover{
+    color:  #4481eb;
+}
+
+.social-icon:hover{
+    border-color: #4481eb;
+}
+
+.social-aide{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 12.5px;
+}
+.mdpOublier, .inscription{
+    text-decoration: none;
+    color:#009999;
+}
+
+.inscription{
+    margin-left:60px;
+}
+
+.inscription i{
+    color:hsla(225, 2%, 40%, 0.959);
+}
+
+.inscription i:hover{
+    color:  #4481eb;
+}
+
+       /* inscription */
+section.sideinscription {
+    background: url(../images/svg/secure_login.svg) no-repeat;
+    background-size: 100% 102%;
+}
+.login-form select{
+     width: 100px;
+     height: 40px;
+     border-radius: 50px;
+     border: 1px solid #888;
+     outline: none;
+     text-align: center;
+     background:none;
+     color: #009999;
+     font-weight: 600;
+}
+
+.form-control select{
+    width: 100%;
+}
+
+.form-control span{
+    font-size: 16px;
+    color:#888 ;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+/* ----  Responsiveness   ----  */
+@media (max-width: 768px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side {
+        display: none;
+    }
+
+}
